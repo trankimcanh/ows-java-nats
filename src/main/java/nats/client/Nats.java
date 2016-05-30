@@ -189,7 +189,11 @@ public interface Nats extends Closeable {
 	 * @param unit            the unit of time to wait
 	 * @param messageHandlers the {@code MessageHandler}s to listen for incoming messages.
 	 * @return a {@code Request} instance associated with the request.
+<<<<<<< HEAD
 	 * @see #request(String, String, long, TimeUnit, Integer, MessageHandler...)
+=======
+	 * @see #request(String, String, long, java.util.concurrent.TimeUnit, Integer, MessageHandler...)
+>>>>>>> b4314b63a273b859361548c5a800988b714bd5e3
 	 */
 	Request request(String subject, long timeout, TimeUnit unit, MessageHandler... messageHandlers);
 
@@ -202,7 +206,11 @@ public interface Nats extends Closeable {
 	 * @param unit            the unit of time to wait
 	 * @param messageHandlers the {@code MessageHandler}s to listen for incoming messages.
 	 * @return a {@code Request} instance associated with the request.
+<<<<<<< HEAD
 	 * @see #request(String, String, long, TimeUnit, Integer, MessageHandler...)
+=======
+	 * @see #request(String, String, long, java.util.concurrent.TimeUnit, Integer, MessageHandler...)
+>>>>>>> b4314b63a273b859361548c5a800988b714bd5e3
 	 */
 	Request request(String subject, String message, long timeout, TimeUnit unit, MessageHandler... messageHandlers);
 
