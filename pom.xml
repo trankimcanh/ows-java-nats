@@ -11,8 +11,8 @@
 
 	<artifactId>nats-client</artifactId>
 
-	<name>Java NATS Client</name>
-	<description>A Java NATS client.</description>
+	<name>OWS Java NATS Client</name>
+	<description>A OWS Java NATS client.</description>
 
 	<dependencies>
 		<dependency>
