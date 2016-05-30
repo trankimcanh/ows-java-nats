@@ -5,30 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ows</groupId>
-    <artifactId>java-client-nats</artifactId>
+    <artifactId>java-nats</artifactId>
     <version>1.0.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.netty</groupId>
-            <artifactId>netty-all</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-        </dependency>
-    </dependencies>
 
     <properties>
         <java.version>1.7</java.version>
@@ -38,13 +16,6 @@
         <netty.version>4.0.27.Final</netty.version>
         <testng.version>6.3.1</testng.version>
     </properties>
-
-    <scm>
-        <url>https://github.com/trankimcanh/ows-java-nats</url>
-        <connection>scm:git:git://github.com/trankimcanh/ows-java-nats.git</connection>
-        <developerConnection>scm:git:git@github.com:trankimcanh/ows-java-nats.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
 
     <build>
         <pluginManagement>
@@ -65,8 +36,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
-    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>io.netty</groupId>
@@ -79,12 +48,6 @@
                 <version>${jackson.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-                <version>${testng.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
@@ -95,6 +58,4 @@
                 <version>${logback.version}</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>
-
 </project>
